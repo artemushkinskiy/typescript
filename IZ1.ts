@@ -15,7 +15,7 @@ rl.question('Введите A, B, N через пробел: ', (input) => {
     const k = (B - A) / (N - 1);
     let x = A;
     for (let m = 1; m < N; m++) {
-        const y = (Math.log(Math.sqrt(Math.abs(x - 2))) + 1.2) / (2 + Math.pow(Math.E, 2)) + Math.pow(2 / x, 1 / 3);
+        const y = (Math.log(Math.sqrt(Math.abs(x - 2))) + 1.2) / (2 + Math.pow(Math.E, x)) + Math.pow(2 / x, 1 / 3);
         console.log(`${m} шаг расчета`);
         console.log(x);
         console.log(y);
